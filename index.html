@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Mother's Day Mama ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #fff0f5, #ffe6ea);
+      color: #5d1049;
+      text-align: center;
+      padding: 30px 15px;
+      overflow-x: hidden;
+      position: relative;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #d81b60;
+      margin-bottom: 40px;
+    }
+    .envelope-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+      margin-bottom: 40px;
+    }
+    .envelope {
+      width: 200px;
+      height: 120px;
+      background-color: #f06292;
+      position: relative;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      border: 2px solid #f8bbd0;
+      transition: transform 0.6s;
+    }
+    .envelope:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ec407a;
+      clip-path: polygon(0 0, 100% 0, 50% 60%);
+      z-index: 1;
+    }
+    .envelope span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      color: #fff3f3;
+      z-index: 2;
+    }
+    .envelope:hover {
+      transform: scale(1.05);
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 50px;
+      animation: float 3s infinite ease-in-out;
+      color: #e91e63;
+    }
+    .heart:nth-child(odd) {
+      animation-duration: 4s;
+    }
+    .heart:nth-child(even) {
+      animation-duration: 5s;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      z-index: 99;
+    }
+
+    .modal-content {
+      background: pink;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      width: 100%;
+      color: #4e342e;
+      font-size: 1rem;
+      line-height: 1.7;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 22px;
+      cursor: pointer;
+      color: #d81b60;
+    }
+
+    .memory-link {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #ad1457;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .memory-link:hover {
+      color: #d81b60;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(-150px) scale(1.2);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .envelope {
+        width: 150px;
+        height: 90px;
+      }
+      .modal-content {
+        padding: 20px;
+        margin-top: 200px;
+        margin-bottom: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Floating Hearts -->
+  <div class="heart" style="top: 20%; left: 10%;">💖</div>
+  <div class="heart" style="top: 30%; left: 40%;">💗</div>
+  <div class="heart" style="top: 50%; left: 60%;">💞</div>
+  <div class="heart" style="top: 70%; left: 20%;">💓</div>
+  <div class="heart" style="top: 80%; left: 70%;">💝</div>
+
+  <h1>Happy Mother’s Day, Mama ❤️</h1>
+
+  <!-- Envelope -->
+  <div class="envelope-wrapper">
+    <div class="envelope" onclick="openModal()">
+      <span>OPEN ME</span>
+    </div>
+  </div>
+
+  <!-- Link to memories -->
+  <a href="memories.html" class="memory-link">See Our Precious Memories →</a>
+
+  <!-- Play Audio Button -->
+  <button onclick="document.getElementById('loveSong').play()" style="margin-top: 30px; padding: 10px 20px; font-size: 1rem; background-color: #f06292; color: white; border: none; border-radius: 8px; cursor: pointer;">
+    🎵 Play A Song For You, Mum
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal" id="loveModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <p>
+      <strong>   Our Dearest Mama,  </strong> <br><br>
+      <strong>  Happy Mother’s Day! 💐 </strong><br><br>
+     
+
+ <strong>    M – Magnanimous - </strong>
+She shows great generosity of spirit, always forgiving and giving without expecting anything in return.
+ <br>  
+                  
+   <strong> O – Observant - </strong>
+She pays close attention to the needs, moods, and details in her family’s life, often noticing things before anyone else.
+               <br>      
+                  
+      <strong>   T – Trustworthy - </strong>
+She is reliable and dependable, someone you can always count on with your heart, your secrets, and your life.
+        <br>      
+
+
+     <strong>    H – Hardworking - </strong>
+She gives her all—sacrificing sleep, time, and energy—to ensure her children are loved, safe, and provided for.
+         <br>      
+
+
+         <strong> E – Extraordinary - </strong>
+She is one of a kind, going above and beyond in ways that only a mother can, turning everyday moments into lasting memories.
+   <br>      
+
+
+          <strong> R – Resilient - </strong>
+She faces life’s challenges with strength and grace, never giving up, no matter how tough things get.
+       <br>      
+
+       These qualities, and many more, make you the greatest <strong>MOTHER</strong> in the world, and they never go unnoticed. Thank you so much for being the best mum we could ever ask for. Happy Mother’s Day to you, mummy.  <strong>We love you!! </strong><br>
+       <strong>  <em>YOUR CHILDREN ❤️</em> </strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- Background music -->
+  <audio id="loveSong">
+    <source src="SweetMother.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Script -->
+  <script>
+    function openModal() {
+      document.getElementById('loveModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('loveModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

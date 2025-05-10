@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memories of Us - WE LOVE YOU!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #fce4ec, #fffafc, #f3e5f5);
+      color: #4e342e;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.2rem;
+      color: #880e4f;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #5e3b3b;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .gallery img, .gallery video {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(136, 14, 79, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover, .gallery video:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 25px rgba(136, 14, 79, 0.3);
+    }
+
+    .play-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .play-button:hover {
+      background-color: #c2185b;
+    }
+
+    a.back-home {
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 1.1rem;
+      color: #ad1457;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.back-home:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>❤️ Memories of Us ❤️</h1>
+
+  <button onclick="document.getElementById('loveSong').play()" class="play-button">
+    🎵 Play A Song For You, Mum
+  </button>
+
+  <p>These are the moments we’ve shared, the smiles we’ve captured, and the love that grows stronger every day. </br>
+    WE LOVE YOU MUMMY❤️</p>
+
+  <div class="gallery">
+    <!-- Replace the src attributes with your actual image/video URLs -->
+    <video src="1.mp4" loop autoplay muted playsinline></video>
+    <img src="1.jpg" alt="Memory 1">
+    <img src="2.jpg" alt="Memory 2">
+    <img src="9.jpg" alt="Memory 3">
+        <img src="21.jpg" alt="Memory 21">
+    <img src="4.jpg" alt="Memory 4">
+    <video src="2.mp4" loop autoplay muted playsinline></video>
+
+    <img src="5.jpg" alt="Memory 5">
+    <img src="6.jpg" alt="Memory 6">
+    <img src="7.jpg" alt="Memory 7">
+    <img src="8.jpg" alt="Memory 8">
+    <video src="5.mp4" loop autoplay muted playsinline></video>
+
+    <img src="3.jpg" alt="Memory 9">
+    <img src="10.jpg" alt="Memory 10">
+    <img src="11.jpg" alt="Memory 11">
+    <img src="12.jpg" alt="Memory 12">
+    <video src="4.mp4" loop autoplay muted playsinline></video>
+
+    <img src="13.jpg" alt="Memory 13">
+    <img src="14.jpg" alt="Memory 14">
+    <img src="15.jpg" alt="Memory 15">
+    <img src="16.jpg" alt="Memory 16">
+    <video src="3.mp4" loop autoplay muted playsinline></video>
+
+    <img src="17.jpg" alt="Memory 17">
+    <img src="18.jpg" alt="Memory 18">
+    <img src="19.jpg" alt="Memory 19">
+    <img src="20.jpg" alt="Memory 20">
+  </div>
+
+  <a class="back-home" href="index.html">← Back to Home</a>
+
+  <audio id="loveSong">
+    <source src="PiesieEstherMoLyric.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
